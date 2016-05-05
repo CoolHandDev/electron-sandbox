@@ -1,0 +1,18 @@
+{
+  "name": "electron-sandbox",
+  "version": "1.0.0",
+  "description": "sandbox for learning electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "asar": "^0.11.0",
+    "electron-prebuilt": "^0.37.8"
+  },
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
