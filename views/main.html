@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <title>Electron Sandbox</title>
     <!--<script src="../node_modules/angular/angular.min.js"></script>-->
+    <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="electron-sandbox.css">
+    <!--import libraries node style-->
     <script>
         var angular = require('angular');
+        var angular_animate = require('angular-animate');
+        var angular_aria = require('angular-aria');
+        var angular_material = require('angular-material')
     </script>
 </head>
-<body ng-app="electronsandbox.main" ng-controller="electronsandbox.main.ctrl as ctrl">
-<h1>Electron Sandbox</h1>
+<body ng-app="electronsandbox.main" ng-controller="electronsandbox.main.ctrl as ctrl" layout="column" ng-cloak>
 
-We are using node <script>document.write(process.versions.node)</script>,
-Chrome <script>document.write(process.versions.chrome)</script>,
-and Electron <script>document.write(process.versions.electron)</script>.
-<br>
-<h1>{{ctrl.activeText}}</h1>
+    
 <script src="app.js"></script>
 </body>
 </html>

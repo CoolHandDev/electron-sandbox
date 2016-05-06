@@ -1,4 +1,3 @@
-
 (function() {
     'use strict';
 
@@ -14,4 +13,4 @@
         this.activeText = 'Angular is running';
     }
 
-})()
+})();
