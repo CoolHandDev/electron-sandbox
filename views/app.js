@@ -2,7 +2,7 @@
     'use strict';
 
     //Angular app entry point
-    angular.module('electronsandbox.main', []);
+    angular.module('electronsandbox.main', ['ngMaterial']);
 
     //Main window controller
     angular.module('electronsandbox.main').controller('electronsandbox.main.ctrl', maincontroller);
