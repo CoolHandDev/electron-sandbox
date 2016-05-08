@@ -6,6 +6,8 @@ const BrowserWindow = electron.BrowserWindow;
 
 var mainWindow = null;
 
+require('electron-reload')(__dirname);
+
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
     // On OS X it is common for applications and their menu bar

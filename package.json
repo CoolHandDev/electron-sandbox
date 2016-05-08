@@ -10,7 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "asar": "^0.11.0",
-    "electron-prebuilt": "^0.37.8"
+    "electron-prebuilt": "^0.37.8",
+    "electron-reload": "^0.3.0"
   },
   "dependencies": {
     "angular": "^1.5.5",
