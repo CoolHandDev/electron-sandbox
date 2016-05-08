@@ -16,11 +16,20 @@
 </head>
 <body ng-app="electronsandbox.main" ng-controller="electronsandbox.main.ctrl as ctrl" layout="column" ng-cloak>
 
-    <md-toolbar class="electronsandbox-toolbar"></md-toolbar>
+    <md-toolbar class="electronsandbox-toolbar">
+        <div layout="row">
+            <div>
+                <md-icon>face</md-icon>
+            </div>
+        </div>
+    </md-toolbar>
 
     <div layout="row" flex>
         <md-sidenav style="background-color: lightblue" md-is-locked-open="true"></md-sidenav>
         <md-content style="background-color: lightgrey" flex></md-content>
+        <br>
+
+
     </div>
 
 <script src="app.js"></script>
