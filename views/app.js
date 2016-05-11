@@ -12,5 +12,4 @@
 
         this.activeText = 'Angular is running';
     }
-
 })();

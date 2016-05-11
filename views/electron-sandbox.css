@@ -65,3 +65,7 @@ html, body {
     .electronsandbox-toolbar {
         background-color: #0099D8;
     }
+
+    .electronsandbox-left-sidenav {
+        background-color: lightblue;
+    }
