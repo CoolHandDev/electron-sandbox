@@ -20,7 +20,6 @@ html, body {
         url(../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
         url(../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
     }
-
     .material-icons {
         font-family: 'Material Icons';
         font-weight: normal;
