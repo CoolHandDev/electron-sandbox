@@ -3,6 +3,7 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const {ipcMain} = require('electron');
 
 var mainWindow = null;
 
@@ -22,7 +23,7 @@ app.on('ready', function() {
     var windowConfig = {
 
     }
-
+    
     // create main view
     mainWindow = new BrowserWindow();
     mainWindow.maximize(); //start the application as maximized
@@ -40,4 +41,10 @@ app.on('ready', function() {
         // when you should delete the corresponding element.
         mainWindow = null;
     });
+
+    //Handle messages from renderer
+    ipcMain.on('async-msg', function(event, arg) {
+        console.log(arg);
+        event.sender.send('async-reply', 'async reply from main');
+    })
 });

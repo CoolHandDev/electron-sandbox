@@ -11,5 +11,10 @@
         var self = this;
 
         this.activeText = 'Angular is running';
+
+        ipcRenderer.on('async-reply', function(event, arg) {
+            console.log(arg);
+        })
+        ipcRenderer.send('async-msg', 'message from renderer');
     }
 })();
