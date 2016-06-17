@@ -20,10 +20,15 @@ app.on('window-all-closed', function() {
 
 app.on('ready', function() {
 
+    global.testModel = {
+        userName: 'John Smith'
+    }
+
+    console.log('This is the main process');
     var windowConfig = {
 
     }
-    
+
     // create main view
     mainWindow = new BrowserWindow();
     mainWindow.maximize(); //start the application as maximized

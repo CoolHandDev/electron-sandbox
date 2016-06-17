@@ -10,11 +10,18 @@
     function maincontroller() {
         var self = this;
 
-        this.activeText = 'Angular is running';
+        self.activeText = 'Angular is running';
+        self.sendAMessage = sendAMessage;
 
         ipcRenderer.on('async-reply', function(event, arg) {
             console.log(arg);
         })
         ipcRenderer.send('async-msg', 'message from renderer');
+
+
+        function sendAMessage() {
+            ipcRenderer.send('async-msg', 'message from clicking the button');
+            console.log(require('electron').remote.getGlobal('testModel').userName);
+        }
     }
 })();
