@@ -34,7 +34,7 @@ app.on('ready', function() {
     mainWindow.maximize(); //start the application as maximized
 
     // Launch entry-point view
-    mainWindow.loadURL('file://' + __dirname + '/views/main.html');
+    mainWindow.loadURL('file://' + __dirname + '/views/main.html'); 
 
     // Open the DevTools.
     //mainWindow.webContents.openDevTools();

@@ -1,10 +1,17 @@
+/**
+ *
+ */
 (function() {
     'use strict';
 
-    //Angular app entry point
+    /**
+     * Entry point
+     */
     angular.module('electronsandbox.main', ['ngMaterial']);
 
-    //Main window controller
+    /**
+     * Main controller
+     */
     angular.module('electronsandbox.main').controller('electronsandbox.main.ctrl', maincontroller);
 
     function maincontroller() {
@@ -18,10 +25,10 @@
         })
         ipcRenderer.send('async-msg', 'message from renderer');
 
-
         function sendAMessage() {
-            ipcRenderer.send('async-msg', 'message from clicking the button');
+            ipcRenderer.send('async-msg', {test:'test object from renderer'});
             console.log(require('electron').remote.getGlobal('testModel').userName);
+            console.log(process.type);
         }
     }
 })();
